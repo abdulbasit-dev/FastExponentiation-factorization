@@ -21,7 +21,7 @@ function FastExponentiation() {
       var leastSignificantBit = b % 2;
       b = Math.floor(b / 2);
 
-      if (leastSignificantBit == 1) {
+      if (leastSignificantBit === 1) {
         result = result * x;
         result = result % n;
       }

@@ -22,7 +22,7 @@ function TrialDivisionAlgorithm() {
       // If any of the numbers between
       // [2, sqrt(N)] is a factor of N
       // Then the number is composite
-      if (n % i == 0) return 0;
+      if (n % i === 0) return 0;
       i += 1;
     }
 

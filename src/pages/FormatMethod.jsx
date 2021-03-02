@@ -17,7 +17,7 @@ function FormatMethod() {
     }
 
     // check if n is a even number
-    if ((n & 1) == 0) {
+    if ((n & 1) === 0) {
       console.log('[' + n / 2.0 + ',' + 2 + ']');
       return;
     }
@@ -26,7 +26,7 @@ function FormatMethod() {
 
     // if n is a perfect root,
     // then both its square roots are its factors
-    if (a * a == n) {
+    if (a * a === n) {
       console.log('[' + a + ',' + a + ']');
       return;
     }
@@ -35,7 +35,7 @@ function FormatMethod() {
       const b1 = a * a - n;
       b = Math.sqrt(b1);
 
-      if (b * b == b1) break;
+      if (b * b === b1) break;
       else a += 1;
     }
     console.log('[' + (a - b) + ',' + (a + b) + ']');
